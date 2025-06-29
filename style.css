@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(39, 38, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  transform: translate(150px, 100px);
+  background: linear-gradient(90deg, purple, pink);
+  border-radius: 50%;
+}
+section::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  transform: translate(-150px, -100px);
+  background: linear-gradient(90deg, purple, pink);
+  border-radius: 50%;
+}
+.container {
+  position: relative;
+  width: 390px;
+  height: 265px;
+  z-index: 100;
+  color: white;
+}
+.container .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  border: 5px #ffffff1a;
+  background-color: #eae6e61a;
+  box-shadow: 0 25px 45px rgb(32, 32, 32);
+}
+.front-face header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+}
+.front-face header {
+  justify-content: space-between;
+  position: relative;
+  top: 27px;
+}
+.front-face .logo {
+  color: white;
+}
+.front-face .logo img {
+  height: 105px;
+}
+h5 {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  bottom: 10px;
+}
+.front-face .chip {
+  height: 65px;
+  margin-top: 13px;
+  margin-right: 12px;
+}
+.front-face .card-details {
+  display: flex;
+  margin-left: 12px;
+  align-items: center;
+  top: 124px;
+  position: relative;
+}
+.front-face .card-details h6 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.front-face .card-details .number {
+  position: relative;
+  top: 22px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.front-face .card-details .name {
+  position: relative;
+  top: 79px;
+}
+.front-face .card-details .valid-date {
+  margin: 10px 0;
+  position: relative;
+  left: 80px;
+  top: 30px;
+}
+.front-face .card-details .valid-date h6 {
+  margin: 27px;
+}
